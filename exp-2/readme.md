@@ -6,7 +6,7 @@ CREATE TABLE Sailors (
     rating NUMBER NOT NULL,
     age NUMBER(4,1) NOT NULL
 );
-![output 1](screenshots2/output 1.png)
+![output 1](screenshots2/output%201.png)
 #Boats table creation
 CREATE TABLE Boats (
  bid NUMBER PRIMARY KEY,
