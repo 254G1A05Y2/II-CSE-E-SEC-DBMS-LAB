@@ -93,3 +93,16 @@ SELECT * FROM section;
 #table of grade_report
 SELECT * FROM grade_report;
 ![output](output-week1/4-table.png)
+
+
+DROP TABLE student;
+![output](output-week1/drop-student.png)
+
+DROP TABLE course;
+![output](output-week1/drop-course.png)
+
+DROP TABLE section;
+![output](output-week1/drop-section.png)
+
+DROP TABLE grade_report;
+![output](output-week1/drop-grade.png)

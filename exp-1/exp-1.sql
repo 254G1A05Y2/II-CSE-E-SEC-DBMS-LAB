@@ -74,3 +74,14 @@ SELECT * FROM section;
 
 #table of grade_report
 SELECT * FROM grade_report;
+
+
+
+DROP TABLE student;
+
+DROP TABLE course;
+
+DROP TABLE section;
+
+DROP TABLE grade_report;
+
