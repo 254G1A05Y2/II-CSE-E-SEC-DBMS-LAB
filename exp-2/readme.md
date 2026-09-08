@@ -157,6 +157,7 @@ AND r.bid=b.bid
 AND(b.color='red' OR b.color='green');
 ```
 ![output](screenshots2/q10.png)
+# q11
 ```
 SELECT s.sname
 FROM Sailors s
@@ -176,6 +177,7 @@ AND s.sid IN
 );
 ```
 ![output](screenshots2/q11.png)
+# q12
 ```
 SELECT DISTINCT r.sid
 FROM Reserves r, Boats b
@@ -190,6 +192,7 @@ AND r.sid NOT IN
 );
 ```
 ![output](screenshots2/q12.png)
+# q13
 ```
 SELECT sid
 FROM Sailors
@@ -202,6 +205,7 @@ FROM Reserves
 WHERE bid = 104;
 ```
 ![output](screenshots2/q13.png)
+# q14
 ```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r
@@ -209,6 +213,7 @@ WHERE s.sid = r.sid
 AND r.bid = 103;
 ```
 ![output](screenshots2/q14.png)
+# q15
 ```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r, Boats b
@@ -217,6 +222,7 @@ AND r.bid = b.bid
 AND b.color = 'red';
 ```
 ![output](screenshots2/q15.png)
+# q16
 ```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r
@@ -224,6 +230,7 @@ WHERE s.sid = r.sid
 AND r.bid = 103;
 ```
 ![output](screenshots2/q16.png)
+# q17
 ```
 SELECT * FROM Sailors
 WHERE rating > ANY
@@ -234,6 +241,7 @@ WHERE rating > ANY
 );
 ```
 ![output](screenshots2/q17.png)
+# q18
 ```
 SELECT * FROM Sailors
 (
@@ -244,7 +252,7 @@ SELECT * FROM Sailors
 );
 ```
 ![output](screenshots2/q18.png)
-
+# q19
 ```
 SELECT * FROM Sailors
 WHERE rating =
@@ -254,6 +262,7 @@ WHERE rating =
 );
 ```
 ![output](screenshots2/q19.png)
+# q20
 ```
 SELECT s.sname
 FROM Sailors s
@@ -274,6 +283,7 @@ AND s.sid IN
 );
 ```
 ![output](screenshots2/q20.png)
+# q21
 ```
 SELECT s.sname FROM Sailors s
 WHERE NOT EXISTS
@@ -290,19 +300,21 @@ WHERE NOT EXISTS
 );
 ```
 ![output](screenshots2/q21.png)
+# q22
 
 ```
 SELECT AVG(age)
 FROM Sailors;
 ```
 ![output](screenshots2/q22.png)
+# q23
 ```
 SELECT AVG(age)
 FROM Sailors
 WHERE rating = 10;
 ```
 ![output](screenshots2/q23.png)
-
+# q24
 ```
 SELECT sname, age
 FROM Sailors
@@ -313,19 +325,20 @@ WHERE age =
 );
 ```
 ![output](screenshots2/q24.png)
+# q25
 
 ```
 SELECT COUNT(*)
 FROM Sailors;
 ```
 ![output](screenshots2/q25.png)
-
+# q26
 ```
 SELECT COUNT(DISTINCT sname)
 FROM Sailors;
 ```
 ![output](screenshots2/q26.png)
-
+# q27
 ```
 SELECT sname
 FROM Sailors
@@ -337,14 +350,14 @@ WHERE age >
 );
 ```
 ![output](screenshots2/q27.png)
-
+# q28
 ```
 SELECT rating, MIN(age)
 FROM Sailors
 GROUP BY rating;
 ```
 ![output](screenshots2/q28.png)
-
+# q29
 ```
 SELECT rating, MIN(age)
 FROM Sailors
@@ -353,7 +366,7 @@ GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
 ![output](screenshots2/q29.png)
-
+# q30
 ```
 SELECT b.bid, COUNT(r.sid) AS reservations
 FROM Boats b
@@ -363,6 +376,7 @@ WHERE b.color = 'red'
 GROUP BY b.bid;
 ```
 ![output](screenshots2/q30.png)
+# q31
 ```
 SELECT rating, AVG(age)
 FROM Sailors
@@ -370,6 +384,7 @@ GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
 ![output](screenshots2/q31.png)
+# q31
 ```
 SELECT rating, AVG(age)
 FROM Sailors
@@ -378,6 +393,7 @@ GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
 ![output](screenshots2/q31.png)
+# q32
 ```
 SELECT rating, AVG(age)
 FROM Sailors
@@ -386,6 +402,7 @@ GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
 ![output](screenshots2/q32.png)
+# q33
 ```
 SELECT rating, AVG(age)
 FROM Sailors
@@ -394,6 +411,7 @@ GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
 ![output](screenshots2/q33.png)
+# q34
 ```
 SELECT rating
 FROM Sailors
