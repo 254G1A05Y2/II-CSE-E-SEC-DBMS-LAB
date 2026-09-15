@@ -73,195 +73,233 @@ SELECT * FROM EMPLOYEE;
 ![output 1](outputs-3(a)/desc-emp.png)
 
 # q1
+```
 SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(HIRE_DATE, 'DD-MON-YYYY') AS HIRE_DATE
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-1.png)
 
 # q2
+```
 SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(SALARY, 'L99,999,999') AS SALARY
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-2.png)
 
 # q3
+```
 SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_NUMBER(SALARY) + 5000 AS NEW_SALARY
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-3.png)
 
 # q4
+```
 SELECT *
 FROM EMPLOYEE
 WHERE HIRE_DATE > TO_DATE('01-JAN-2020', 'DD-MON-YYYY');
+```
+
 ![output 1](outputs-3(a)/Q-4.png)
 
 
 # q5
+```
 SELECT EMPLOYEE_ID,
        FIRST_NAME || ' ' || LAST_NAME AS FULL_NAME
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-5.png)
 
 
 # q6
+```
 SELECT EMPLOYEE_ID,
        CONCAT(FIRST_NAME, CONCAT(' ', LAST_NAME)) AS FULL_NAME
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-6.png)
 
 
 
 # q7
+```
 SELECT FIRST_NAME,
        LPAD(FIRST_NAME, 10, '*') AS PADDED_NAME
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-7.png)
 
 
 # q8
+```
 SELECT FIRST_NAME,
        RPAD(FIRST_NAME, 10, '*') AS PADDED_NAME
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-8.png)
 
 
 # q9
+```
 SELECT FIRST_NAME,
        LTRIM(FIRST_NAME) AS TRIMMED_NAME
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-9.png)
 
 
 
 
 # q10
+```
 SELECT FIRST_NAME,
        RTRIM(FIRST_NAME) AS TRIMMED_NAME
 FROM EMPLOYEE;
-
+```
 
 ![output 1](outputs-3(a)/Q-10.png)
 
 # q11
+```
 SELECT FIRST_NAME,
        LOWER(FIRST_NAME) AS LOWERCASE_NAME
 FROM EMPLOYEE;
-
+```
 
 ![output 1](outputs-3(a)/Q-11.png)
 
 
 # q12
+```
 SELECT FIRST_NAME,
        UPPER(FIRST_NAME) AS UPPERCASE_NAME
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-12.png)
 
 # q13
+```
 SELECT FIRST_NAME,
        INITCAP(FIRST_NAME) AS PROPER_NAME
 FROM EMPLOYEE;
-
+```
 
 ![output 1](outputs-3(a)/Q-13.png)
 
 
 # q14
+```
 SELECT FIRST_NAME,
        LENGTH(FIRST_NAME) AS NAME_LENGTH
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-14.png)
 
 
 
 # q15
+```
 SELECT FIRST_NAME,
        SUBSTR(FIRST_NAME, 1, 3) AS FIRST_THREE
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-15.png)
 
 
 # q16
+```
 SELECT FIRST_NAME,
        INSTR(LOWER(FIRST_NAME), 'a') AS POSITION_OF_A
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-16.png)
 
 
 # q17
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
        HIRE_DATE, SYSDATE AS CURRENT_DATE
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-17.png)
 
 # q18
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        NEXT_DAY(HIRE_DATE, 'MONDAY') AS NEXT_MONDAY
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-18.png)
 
 
 
 # q19
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        ADD_MONTHS(HIRE_DATE, 6) AS AFTER_SIX_MONTHS
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-19.png)
 
 
 # q20
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        LAST_DAY(HIRE_DATE) AS LAST_DAY_OF_MONTH
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-20.png)
 
 
 
 # q21
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        ROUND(MONTHS_BETWEEN(SYSDATE, HIRE_DATE), 2) AS MONTHS_WORKED
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-21.png)
 
 
 # q22
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
        LEAST(SALARY, 60000) AS SMALLER_VALUE
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-22.png)
 
 
 # q23
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
        GREATEST(SALARY, 60000) AS GREATER_VALUE
 FROM EMPLOYEE;
-
+```
 
 ![output 1](outputs-3(a)/Q-23.png)
 
 
 
 # q24
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        TRUNC(HIRE_DATE, 'MONTH') AS FIRST_DAY_OF_MONTH
 FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-24.png)
 
 
 # q25
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        ROUND(HIRE_DATE, 'MONTH') AS ROUNDED_DATE
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-25.png)
 
 
@@ -269,16 +307,19 @@ FROM EMPLOYEE;
 
 
 # q26
+```
 SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(HIRE_DATE, 'DAY, DD-MON-YYYY') AS FORMATTED_DATE
 FROM EMPLOYEE;
+```
 ![output 1](outputs-3(a)/Q-26.png)
 
 
 # q27
+```
 SELECT *
 FROM EMPLOYEE
 WHERE HIRE_DATE < TO_DATE('01-JAN-2019', 'DD-MON-YYYY');
 SELECT * FROM EMPLOYEE;
-
+```
 ![output 1](outputs-3(a)/Q-27.png)
