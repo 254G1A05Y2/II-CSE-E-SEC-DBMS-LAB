@@ -27,13 +27,13 @@ INSERT INTO student VALUES (114, 'Swathi', 'EEE', 87);
 INSERT INTO student VALUES (115, 'Ajay', 'ECE', 93);
 COMMIT;
 ```
-![output](outputs-5-exp-5/insert-1.png)
-![output](outputs-5-exp-5/insert-2.png)
+![output](outputs-5/insert-1.png)
+![output](outputs-5/insert-2.png)
 
 
 # DISPLAY STUDENT TABLE
 SELECT * FROM student;
-![OUTPUT](outputs-5-exp-5/display.png)
+![OUTPUT](outputs-5/display.png)
 
 
 ## PL/SQL CODE
@@ -79,11 +79,11 @@ END;
     INSERT INTO student
     VALUES (116, 'Harish', 'CSE', 82);
 ```
-![OUTPUT](outputs-5-exp-5/output-a.png)
-![OUTPUT](outputs-5-exp-5/output-b.png)
+![OUTPUT](outputs-5/output-a.png)
+![OUTPUT](outputs-5/output-b.png)
 
-![OUTPUT](outputs-5-exp-5/output-c.png)
-![OUTPUT](outputs-5-exp-5/output-d.png)
+![OUTPUT](outputs-5/output-c.png)
+![OUTPUT](outputs-5/output-d.png)
 
 
 
@@ -136,9 +136,9 @@ EXCEPTION
 END;
 /
 ```
-![output 1](outputs-5-exp-5/5b-1.png)
+![output 1](outputs-5/5b-1.png)
 ```
 SELECT * FROM STUDENT1
 WHERE STUDENT_ID BETWEEN 201 AND 203;
 ```
-![output 2](outputs-5-exp-5/5b-2.png)
+![output 2](outputs-5/5b-2.png)
