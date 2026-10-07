@@ -27,13 +27,13 @@ INSERT INTO student VALUES (114, 'Swathi', 'EEE', 87);
 INSERT INTO student VALUES (115, 'Ajay', 'ECE', 93);
 COMMIT;
 ```
-![output a](outputs-5-exp-5/insert-1.png)
-![output b](outputs-5-exp-5/insert-2.png)
+![output](outputs-5-exp-5/insert-1.png)
+![output](outputs-5-exp-5/insert-2.png)
 
 
 # DISPLAY STUDENT TABLE
 SELECT * FROM student;
-![output](outputs-5-exp-5/display.png)
+![OUTPUT](outputs-5-exp-5/display.png)
 
 
 ## PL/SQL CODE
