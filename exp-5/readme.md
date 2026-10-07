@@ -79,11 +79,11 @@ END;
     INSERT INTO student
     VALUES (116, 'Harish', 'CSE', 82);
 ```
-![OUTPUT](outputs-5-exp-5/output-a)
-![OUTPUT](outputs-5-exp-5/output-b)
+![OUTPUT](outputs-5-exp-5/output-a.png)
+![OUTPUT](outputs-5-exp-5/output-b.png)
 
-![OUTPUT](outputs-5-exp-5/output-c)
-![OUTPUT](outputs-5-exp-5/output-d)
+![OUTPUT](outputs-5-exp-5/output-c.png)
+![OUTPUT](outputs-5-exp-5/output-d.png)
 
 
 
