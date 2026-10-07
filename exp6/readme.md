@@ -101,7 +101,7 @@ EXCEPTION
 END;
 /
 ```
-![Experiment 6A Output](./output6/6A.png)
+![Experiment 6A Output](output6/6A.png)
 
 # EXPERIMENT 6B
 ```
@@ -235,8 +235,8 @@ END;
 ```
 ## OUTPUT
 
-![Experiment 6B Output - 1](./output6/6B-1.png)
+![Experiment 6B Output - 1](output6/6B-1.png)
 
-![Experiment 6B Output - 2](./output6/6B-2.png)
+![Experiment 6B Output - 2](output6/6B-2.png)
 
-![Experiment 6B Output - 3](./output6/6B-3.png)
+![Experiment 6B Output - 3](output6/6B-3.png)
