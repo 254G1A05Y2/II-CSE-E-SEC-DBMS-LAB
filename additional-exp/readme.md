@@ -249,19 +249,20 @@ BEGIN
 
 END;
 /
-```
+
 ![output](output/op4.png)
 
-```
 
+```
 (106, 'Priya', 'ECE', 'Hardware Engineer', 45000);
 (104, 'Anjali', 'EEE', 'Electrical Engineer', 38000);
 
 ```
+
 ```
 CREATE TABLE employee (
 
-```
+
     v_annual_salary := calculate_annual_salary(v_monthly_salary);
     INTO v_monthly_salary
     v_annual_salary  NUMBER;
@@ -269,5 +270,4 @@ CREATE TABLE employee (
 FROM employee;
        monthly_salary,
        employee_name,
-
 ```
